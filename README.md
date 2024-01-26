@@ -1,4 +1,7 @@
 # extension-resource-encryption
+
+*BRS* Internal fork for own encryption seed. Need to look into configuring that. currently forked for later use.
+
 This extension implements a buildtime plugin for encryption of resources in the game archive and a runtime counterpart to decrypt the resources. The extension uses the same encryption algorithm as in the official Defold source code, but since it can be forked it allows developers to replace the default encryption key with a private project specific key.
 
 NOTE: Defold does not encrypt all resources in a game archive. Instead Defold encrypts a [subset of resource types](https://github.com/defold/defold/blob/dev/com.dynamo.cr/com.dynamo.cr.bob/src/com/dynamo/bob/archive/ArchiveBuilder.java#L55) where it may be desirable to apply additional protection.
